@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+
+        <p>
+            <label for="userID">User id:</label>
+            <input id="userID" type="text" placeholder="Required, length of 5-12 characters" min="5" max="12" required>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Required, length of 7-12 characters" min="7" max="12"
+                required>
+        </p>
+        <p>
+            <label for="name">Name:</label>
+            <!--Please help me to get the pattern tag right for letter only-->
+            <input id="name" type="text" placeholder="Required, letters only" pattern="[A-Za-z]" required>
+        </p>
+        <p>
+            <label for="address">Address:</label>
+            <input id="address" type="text" placeholder="Optional">
+        </p>
+        <p>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="usa">United States of America</option>
+                <option value="southAfrica">South Africa</option>
+                <option value="australia">Australia</option>
+                <option value="spain">Spain</option>
+            </select>
+        </p>
+        <p>
+            <label for="zipCode">Zip Code:</label>
+            <input id="zipCode" type="text" placeholder="Required, numeric only" pattern="[0-9]" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Required, valid email address only" required>
+        </p>
+        <p>
+        <div>
+            Sex:
+            <input id="male" type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input id="female" type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        </p>
+        <p>
+        <div>
+            Language:
+            <label for="english">English</label>
+            <input id="english" type="radio" name="language" value="english" required>
+            <label for="nonEnglish">Non English</label>
+            <input id="nonEnglish" type="radio" name="language" value="nonEnglish" required>
+        </div>
+        </p>
+        <p>
+            <label for="about">About:</label>
+            <input id="about" type="text" size="100" placeholder="Optional">
+        </p>
+        <!--How to change text box?-->
+
+        <button type="submit">Sumbit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+* {box-sizing: border-box;}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+body {
+    padding: 40px;
+}
+
+::placeholder {
+    color:red;
+}
